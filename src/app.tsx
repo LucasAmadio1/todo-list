@@ -8,11 +8,12 @@ import { Badge } from './components/badge';
 import { Button } from './components/button';
 import { ButtonIcon } from './components/button-icon';
 import { Icon } from './components/icon';
+import { Input } from './components/input';
 import { Text } from './components/text';
 
 export function App() {
   return (
-    <div className="flex flex-col gap-4 p-10">
+    <div className="flex flex-col gap-10 p-10">
       <div className="flex flex-col gap-2">
         <Text variant="body-sm-bold" className="text-pink-base">
           Olá mundo!
@@ -44,6 +45,10 @@ export function App() {
         <ButtonIcon icon={TrashIcon} />
         <ButtonIcon icon={TrashIcon} variant="secondary" />
         <ButtonIcon icon={TrashIcon} variant="tertiary" />
+      </div>
+
+      <div>
+        <Input />
       </div>
     </div>
   );
